@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap');
+
+:root {
+  --bg-color: #fdf6e3;
+  --text-main: #5d4037;
+  --leaf-green: #78c2ad;
+  --wood-brown: #8d6e63;
+  --card-bg: #ffffff;
+  --border-radius: 8px;
+  --table-border: #d7ccc8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e0f7fa; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  /* Use Noto Sans for table data for better readability, KuaiLe for headers */
+  font-family: 'Noto Sans SC', sans-serif;
+  color: var(--text-main);
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+  padding: 20px;
+}
+
+h1, .island-info, .footer, th {
+  font-family: 'ZCOOL KuaiLe', cursive, sans-serif;
+}
+
+/* A4 Page Setup */
+.a4-page {
+  width: 210mm;
+  min-height: 297mm;
+  background-color: var(--bg-color);
+  background-image: radial-gradient(#dcedc8 20%, transparent 20%),
+    radial-gradient(#dcedc8 20%, transparent 20%);
+  background-position: 0 0, 10px 10px;
+  background-size: 20px 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  padding: 15mm;
+  display: flex;
+  flex-direction: column;
+}
+
+@media print {
+  body {
+    background: none;
+    padding: 0;
+  }
+  .a4-page {
+    margin: 0;
+    box-shadow: none;
+    width: 100%;
+    min-height: 100%;
+  }
+  /* Repeat table header on every printed page */
+  thead {
+    display: table-header-group;
+  }
+  tr {
+    page-break-inside: avoid;
+  }
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+  background: white;
+  border: 4px dashed var(--leaf-green);
+  border-radius: var(--border-radius);
+  padding: 15px;
+  box-shadow: 4px 4px 0 rgba(120, 194, 173, 0.3);
+  page-break-inside: avoid;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+  color: var(--leaf-green);
+  text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.island-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  font-size: 16px;
+  color: var(--wood-brown);
+}
+
+.island-info span {
+  border-bottom: 2px solid var(--wood-brown);
+  padding: 0 20px;
+  min-width: 120px;
+  display: inline-block;
+}
+
+/* Table */
+.villager-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: 2px 2px 0 rgba(141, 110, 99, 0.2);
+  border: 2px solid var(--wood-brown);
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.villager-table th, .villager-table td {
+  padding: 8px 10px;
+  border: 1px solid var(--table-border);
+  text-align: center;
+}
+
+.villager-table th {
+  background-color: var(--wood-brown);
+  color: white;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+/* Zebra striping */
+.villager-table tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+.villager-table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.name-col {
+  font-weight: bold;
+  color: var(--leaf-green);
+  font-size: 14px;
+}
+
+.gender-m {
+  color: #0288d1;
+  font-weight: bold;
+}
+
+.gender-f {
+  color: #c2185b;
+  font-weight: bold;
+}
+
+.check-col {
+  width: 40px;
+}
+
+.check-circle {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--text-main);
+  border-radius: 50%;
+  background: white;
+  margin: 0 auto;
+}
+
+/* Footer */
+.footer {
+  margin-top: auto;
+  text-align: center;
+  font-size: 14px;
+  color: var(--wood-brown);
+  padding-top: 5mm;
+  page-break-inside: avoid;
+}

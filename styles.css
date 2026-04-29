@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+:root {
+  --bg-color: #fdf6e3;
+  --text-main: #5d4037;
+  --leaf-green: #78c2ad;
+  --wood-brown: #8d6e63;
+  --card-bg: #ffffff;
+  --bug-color: #aed581;
+  --fish-color: #81d4fa;
+  --fossil-color: #bcaaa4;
+  --fruit-color: #ffcc80;
+  --border-radius: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e0f7fa; /* Screen background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'ZCOOL KuaiLe', cursive, sans-serif;
+  color: var(--text-main);
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+}
+
+/* A4 Page Setup */
+.a4-page {
+  width: 210mm;
+  min-height: 297mm;
+  background-color: var(--bg-color);
+  background-image: radial-gradient(#dcedc8 20%, transparent 20%),
+    radial-gradient(#dcedc8 20%, transparent 20%);
+  background-position: 0 0, 10px 10px;
+  background-size: 20px 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  margin: 20px;
+  padding: 15mm;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+@media print {
+  body {
+    background: none;
+    align-items: flex-start;
+  }
+  .a4-page {
+    margin: 0;
+    box-shadow: none;
+    width: 100%;
+    height: auto;
+    page-break-after: always;
+  }
+}
+
+/* Header */
+.header {
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+  background: white;
+  border: 4px dashed var(--leaf-green);
+  border-radius: var(--border-radius);
+  padding: 15px;
+  box-shadow: 4px 4px 0 rgba(120, 194, 173, 0.3);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 36px;
+  color: var(--leaf-green);
+  text-shadow: 2px 2px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header h1 span {
+  font-size: 42px;
+}
+
+.island-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  font-size: 18px;
+  color: var(--wood-brown);
+}
+
+.island-info span {
+  border-bottom: 2px solid var(--wood-brown);
+  padding: 0 20px;
+  min-width: 150px;
+  display: inline-block;
+}
+
+/* Main Content Grid */
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 15mm;
+  flex: 1;
+}
+
+/* Section Cards */
+.section {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: 15px;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.05);
+  border: 3px solid var(--wood-brown);
+  position: relative;
+}
+
+.section-title {
+  position: absolute;
+  top: -18px;
+  left: 20px;
+  background: var(--wood-brown);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.section.bugs { border-color: var(--bug-color); }
+.section.bugs .section-title { background: var(--bug-color); color: #33691e; }
+
+.section.fishes { border-color: var(--fish-color); }
+.section.fishes .section-title { background: var(--fish-color); color: #01579b; }
+
+.section.fossils { border-color: var(--fossil-color); }
+.section.fossils .section-title { background: var(--fossil-color); color: #3e2723; }
+
+.section.fruits { border-color: var(--fruit-color); }
+.section.fruits .section-title { background: var(--fruit-color); color: #e65100; }
+
+/* Grid for Items inside Section */
+.item-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 15px;
+}
+
+/* Individual Item */
+.item {
+  display: flex;
+  align-items: center;
+  background: #fff9c4;
+  padding: 8px;
+  border-radius: 12px;
+  border: 2px solid #fff59d;
+}
+
+.section.bugs .item { background: #f1f8e9; border-color: #dcedc8; }
+.section.fishes .item { background: #e1f5fe; border-color: #b3e5fc; }
+.section.fossils .item { background: #efebe9; border-color: #d7ccc8; }
+.section.fruits .item { background: #fff3e0; border-color: #ffe0b2; }
+
+.item-icon {
+  font-size: 24px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 50%;
+  margin-right: 10px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.item-name {
+  flex: 1;
+  font-size: 16px;
+}
+
+/* Checkbox Circle for printing */
+.item-check {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--text-main);
+  border-radius: 50%;
+  background: white;
+  margin-left: 5px;
+}
+
+/* Footer elements */
+.footer {
+  margin-top: auto;
+  text-align: center;
+  font-size: 14px;
+  color: var(--wood-brown);
+  padding-top: 10mm;
+}

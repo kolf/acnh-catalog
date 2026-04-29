@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer">
+  <title>动森博物馆海洋生物图鉴 (A4 打印版)</title>
+  <link rel="stylesheet" href="styles_full_table.css">
+  <style>
+    .avatar-img {
+      width: 64px;
+      height: 64px;
+      object-fit: contain;
+      border-radius: 50%;
+      border: 2px solid #00acc1; /* Cyan border for sea creatures */
+      background: #e0f7fa;
+    }
+    .avatar-col {
+      width: 80px;
+      text-align: center;
+    }
+    th {
+      white-space: nowrap;
+      background-color: #00838f; /* Dark cyan header */
+      color: white;
+    }
+    .name-col {
+      white-space: nowrap;
+      font-weight: bold;
+      color: #006064;
+    }
+    .check-col {
+      white-space: nowrap;
+      width: 60px;
+    }
+    .text-small {
+      font-size: 10px;
+      color: #555;
+    }
+    .villager-table {
+      border: 2px solid #00838f;
+    }
+    .header {
+      border-color: #00838f;
+      box-shadow: 4px 4px 0 rgba(0, 131, 143, 0.3);
+    }
+    .header h1 {
+      color: #00838f;
+    }
+  </style>
+</head>
+<body>
+  <div class="a4-page">
+    <div class="header">
+      <h1><span>🤿</span> 动森博物馆图鉴 - 海洋生物 <span>🐚</span></h1>
+      <div class="island-info">
+        <div>小岛名称：<span></span></div>
+        <div>岛主名字：<span></span></div>
+      </div>
+    </div>
+    <table class="villager-table">
+      <thead>
+        <tr>
+          <th class="avatar-col">图片</th>
+          <th>名称</th>
+          <th>影子大小</th>
+          <th style="width: 20%;">出现月份 (北/南半球)</th>
+          <th style="width: 20%;">出现时间</th>
+          <th>价格</th>
+          <th class="check-col">收集</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/8/87/93y8t4253testg9wexf29d8gwv94a5g.png/80px-%E3%83%AF%E3%82%AB%E3%83%A1.png" class="avatar-img" alt="裙带菜" loading="lazy"></td>
+          <td class="name-col">裙带菜</td>
+          <td>稍大</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 1、2、3、4、5、6、7、10、11、12</div>
+            <div class="text-small" style="color: #ef6c00;">南: 1、4、5、6、7、8、9、10、11、12</div>
+          </td>
+          <td><div class="text-small">1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16、17、18、19、20、21、22、23、24、（全天）</div></td>
+          <td>600</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/1/11/co308vb2kitaxf72nwblqhl2zwhmbbv.png/80px-%E3%82%A6%E3%83%9F%E3%83%96%E3%83%89%E3%82%A6.png" class="avatar-img" alt="海葡萄" loading="lazy"></td>
+          <td class="name-col">海葡萄</td>
+          <td>稍小</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 6、7、8、9</div>
+            <div class="text-small" style="color: #ef6c00;">南: 12、1、2、3</div>
+          </td>
+          <td><div class="text-small">1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16、17、18、19、20、21、22、23、24、（全天）</div></td>
+          <td>900</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/1/10/mpsaw8jzyedlwc9rph6289v4lt4qgzl.png/80px-%E3%83%8A%E3%83%9E%E3%82%B3.png" class="avatar-img" alt="海参" loading="lazy"></td>
+          <td class="name-col">海参</td>
+          <td>中</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 1、2、3、4、11、12</div>
+            <div class="text-small" style="color: #ef6c00;">南: 5、6、7、8、9、10</div>
+          </td>
+          <td><div class="text-small">（全天）、1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16、17、18、19、20、21、22、23、24</div></td>
+          <td>500</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/a/a0/aizbqnqwvp1b6hpubeh6tju4j5llwth.png/80px-%E3%82%BB%E3%83%B3%E3%82%B8%E3%83%A5%E3%83%8A%E3%83%9E%E3%82%B3.png" class="avatar-img" alt="海猪" loading="lazy"></td>
+          <td class="name-col">海猪</td>
+          <td>稍小</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 1、2、11、12</div>
+            <div class="text-small" style="color: #ef6c00;">南: 5、6、7、8</div>
+          </td>
+          <td><div class="text-small">16、17、18、19、20、21、22、23、24、1、2、3、4、5、6、7、8、9</div></td>
+          <td>10000</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/b/b3/fm11lvrxm2blq03vilstt7jy2pp9slx.png/80px-%E3%83%92%E3%83%88%E3%83%87.png" class="avatar-img" alt="海星" loading="lazy"></td>
+          <td class="name-col">海星</td>
+          <td>稍小</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 1、2、3、4、5、6、7、8、9、10、11、12、(全年)</div>
+            <div class="text-small" style="color: #ef6c00;">南: 1、2、3、4、5、6、7、8、9、10、11、12、(全年)</div>
+          </td>
+          <td><div class="text-small">1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16、17、18、19、20、21、22、23、24、（全天）</div></td>
+          <td>500</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/6/62/ikv5v6091x6w6bnez3q73tpyd5aymw4.png/80px-%E3%82%A6%E3%83%8B.png" class="avatar-img" alt="海胆" loading="lazy"></td>
+          <td class="name-col">海胆</td>
+          <td>稍小</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 5、6、7、8、9</div>
+            <div class="text-small" style="color: #ef6c00;">南: 1、2、3、11、12</div>
+          </td>
+          <td><div class="text-small">1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16、17、18、19、20、21、22、23、24、（全天）</div></td>
+          <td>1700</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/9/9e/sgn6qlg1kqbv27hi9v0x5qpiwba5u3q.png/80px-%E3%83%91%E3%82%A4%E3%83%97%E3%82%A6%E3%83%8B.png" class="avatar-img" alt="石笔海胆" loading="lazy"></td>
+          <td class="name-col">石笔海胆</td>
+          <td>中</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 5、6、7、8、9</div>
+            <div class="text-small" style="color: #ef6c00;">南: 1、2、3、11、12</div>
+          </td>
+          <td><div class="text-small">1、2、3、4、5、6、7、8、9、16、17、18、19、20、21、22、23、24</div></td>
+          <td>2000</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/0/0f/boqgs5g70g3b0r483u96xajsbxewqqs.png/80px-%E3%82%A4%E3%82%BD%E3%82%AE%E3%83%B3%E3%83%81%E3%83%A3%E3%82%AF.png" class="avatar-img" alt="海葵" loading="lazy"></td>
+          <td class="name-col">海葵</td>
+          <td>稍大</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 1、2、3、4、5、6、7、8、9、10、11、12、(全年)</div>
+            <div class="text-small" style="color: #ef6c00;">南: 1、2、3、4、5、6、7、8、9、10、11、12、(全年)</div>
+          </td>
+          <td><div class="text-small">1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16、17、18、19、20、21、22、23、24、（全天）</div></td>
+          <td>500</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/7/77/tf30ms72w3uuhrjzb05qnnxiiot3je7.png/80px-%E3%83%9F%E3%82%BA%E3%82%AF%E3%83%A9%E3%82%B2.png" class="avatar-img" alt="海月水母" loading="lazy"></td>
+          <td class="name-col">海月水母</td>
+          <td>稍小</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 7、8、9</div>
+            <div class="text-small" style="color: #ef6c00;">南: 1、2、3</div>
+          </td>
+          <td><div class="text-small">1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16、17、18、19、20、21、22、23、24、（全天）</div></td>
+          <td>600</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/0/00/7cnckp16l264eim40a5cde2adg0db55.png/80px-%E3%82%A6%E3%83%9F%E3%82%A6%E3%82%B7.png" class="avatar-img" alt="海蛞蝓" loading="lazy"></td>
+          <td class="name-col">海蛞蝓</td>
+          <td>特小</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 1、2、3、4、5、6、7、8、9、10、11、12、(全年)</div>
+            <div class="text-small" style="color: #ef6c00;">南: 1、2、3、4、5、6、7、8、9、10、11、12、(全年)</div>
+          </td>
+          <td><div class="text-small">1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16、17、18、19、20、21、22、23、24、（全天）</div></td>
+          <td>600</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/4/48/4ael270dj1heqt91uhgd6t4uaaeecee.png/80px-%E3%82%A2%E3%82%B3%E3%83%A4%E3%82%AC%E3%82%A4.png" class="avatar-img" alt="马氏珠母贝" loading="lazy"></td>
+          <td class="name-col">马氏珠母贝</td>
+          <td>稍小</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 1、2、3、4、5、6、7、8、9、10、11、12、(全年)</div>
+            <div class="text-small" style="color: #ef6c00;">南: 1、2、3、4、5、6、7、8、9、10、11、12、(全年)</div>
+          </td>
+          <td><div class="text-small">1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16、17、18、19、20、21、22、23、24、（全天）</div></td>
+          <td>2800</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/0/0f/9lpi1h6g1uestxw2ms83ib4kqrd243c.png/80px-%E3%83%A0%E3%83%BC%E3%83%AB%E3%82%AC%E3%82%A4.png" class="avatar-img" alt="贻贝" loading="lazy"></td>
+          <td class="name-col">贻贝</td>
+          <td>稍小</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 6、7、8、9、10、11、12</div>
+            <div class="text-small" style="color: #ef6c00;">南: 1、2、3、4、5、6、12</div>
+          </td>
+          <td><div class="text-small">1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16、17、18、19、20、21、22、23、24、（全天）</div></td>
+          <td>1500</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/e/e8/2qlxfyd8g8uus5be49tls1s11pdfib0.png/80px-%E3%82%AA%E3%82%A4%E3%82%B9%E3%82%BF%E3%83%BC.png" class="avatar-img" alt="牡蛎" loading="lazy"></td>
+          <td class="name-col">牡蛎</td>
+          <td>稍小</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 1、2、9、10、11、12</div>
+            <div class="text-small" style="color: #ef6c00;">南: 3、4、5、6、7、8</div>
+          </td>
+          <td><div class="text-small">（全天）、1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16、17、18、19、20、21、22、23、24</div></td>
+          <td>1100</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/e/ed/en2iqtjtdd87zdpfblqsivqlqyob5w4.png/80px-%E3%83%9B%E3%82%BF%E3%83%86.png" class="avatar-img" alt="虾夷扇贝" loading="lazy"></td>
+          <td class="name-col">虾夷扇贝</td>
+          <td>中</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 1、2、3、4、5、6、7、8、9、10、11、12、(全年)</div>
+            <div class="text-small" style="color: #ef6c00;">南: 1、2、3、4、5、6、7、8、9、10、11、12、(全年)</div>
+          </td>
+          <td><div class="text-small">1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16、17、18、19、20、21、22、23、24、（全天）</div></td>
+          <td>1200</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/c/c5/e5npxf6e29hj5v9wsz6zt61jicvna09.png/80px-%E3%83%90%E3%82%A4%E3%82%AC%E3%82%A4.png" class="avatar-img" alt="花螺" loading="lazy"></td>
+          <td class="name-col">花螺</td>
+          <td>稍小</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 1、2、3、4、5、6、7、8、9、10、11、12、(全年)</div>
+            <div class="text-small" style="color: #ef6c00;">南: 1、2、3、4、5、6、7、8、9、10、11、12、(全年)</div>
+          </td>
+          <td><div class="text-small">1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16、17、18、19、20、21、22、23、24、（全天）</div></td>
+          <td>1000</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/2/2f/ianc6zkjrbb69q3sr39rnqy6dn2yzmz.png/80px-%E3%82%B5%E3%82%B6%E3%82%A8.png" class="avatar-img" alt="角蝾螺" loading="lazy"></td>
+          <td class="name-col">角蝾螺</td>
+          <td>稍小</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 3、4、5、9、10、11、12</div>
+            <div class="text-small" style="color: #ef6c00;">南: 3、4、5、6、9、10、11</div>
+          </td>
+          <td><div class="text-small">（全天）、1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16、17、18、19、20、21、22、23、24</div></td>
+          <td>1000</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/8/84/4txg1o4bbz5ewul2nqlt5cr4qg5fb23.png/80px-%E3%82%A2%E3%83%AF%E3%83%93.png" class="avatar-img" alt="鲍鱼" loading="lazy"></td>
+          <td class="name-col">鲍鱼</td>
+          <td>中</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 1、6、7、8、9、10、11、12</div>
+            <div class="text-small" style="color: #ef6c00;">南: 1、2、3、4、5、6、7、12</div>
+          </td>
+          <td><div class="text-small">1、2、3、4、5、6、7、8、9、16、17、18、19、20、21、22、23、24</div></td>
+          <td>2000</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/f/f0/mvueqqti10n6z5qf9ep7s7k8lmxvbac.png/80px-%E3%82%AA%E3%82%AA%E3%82%B7%E3%83%A3%E3%82%B3%E3%82%AC%E3%82%A4.png" class="avatar-img" alt="大砗磲" loading="lazy"></td>
+          <td class="name-col">大砗磲</td>
+          <td>大</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 5、6、7、8、9</div>
+            <div class="text-small" style="color: #ef6c00;">南: 1、2、3、11、12</div>
+          </td>
+          <td><div class="text-small">1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16、17、18、19、20、21、22、23、24、（全天）</div></td>
+          <td>15000</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/2/2f/qk7vtroreh26bz6cgxccg1qujj6qmsb.png/80px-%E3%82%AA%E3%82%A6%E3%83%A0%E3%82%AC%E3%82%A4.png" class="avatar-img" alt="鹦鹉螺" loading="lazy"></td>
+          <td class="name-col">鹦鹉螺</td>
+          <td>中</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 3、4、5、6、9、10、11</div>
+            <div class="text-small" style="color: #ef6c00;">南: 3、4、5、9、10、11、12</div>
+          </td>
+          <td><div class="text-small">16、17、18、19、20、21、22、23、24、1、2、3、4、5、6、7、8、9</div></td>
+          <td>1800</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/f/f8/44pl012sipnfgv04as0s7vjct9ftzg1.png/80px-%E3%82%BF%E3%82%B3.png" class="avatar-img" alt="章鱼" loading="lazy"></td>
+          <td class="name-col">章鱼</td>
+          <td>中</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 1、2、3、4、5、6、7、8、9、10、11、12、(全年)</div>
+            <div class="text-small" style="color: #ef6c00;">南: 1、2、3、4、5、6、7、8、9、10、11、12、(全年)</div>
+          </td>
+          <td><div class="text-small">1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16、17、18、19、20、21、22、23、24、（全天）</div></td>
+          <td>1200</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/0/06/2ozinqpa1ytp24z6mbjl3fex2r7sctu.png/80px-%E3%83%A1%E3%83%B3%E3%83%80%E3%82%B3.png" class="avatar-img" alt="扁面蛸" loading="lazy"></td>
+          <td class="name-col">扁面蛸</td>
+          <td>稍小</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 3、4、5、9、10、11</div>
+            <div class="text-small" style="color: #ef6c00;">南: 3、4、5、9、10、11</div>
+          </td>
+          <td><div class="text-small">（全天）、1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16、17、18、19、20、21、22、23、24</div></td>
+          <td>6000</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/4/40/d3qp7asavn69v2nojlpyhg5zorf94wc.png/80px-%E3%82%B3%E3%82%A6%E3%83%A2%E3%83%AA%E3%83%80%E3%82%B3.png" class="avatar-img" alt="吸血鬼乌贼" loading="lazy"></td>
+          <td class="name-col">吸血鬼乌贼</td>
+          <td>中</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 5、6、7、8</div>
+            <div class="text-small" style="color: #ef6c00;">南: 11、12、1、2</div>
+          </td>
+          <td><div class="text-small">1、2、3、4、5、6、7、8、9、16、17、18、19、20、21、22、23、24</div></td>
+          <td>10000</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/7/74/co710iutgbhmpqccssm1sms14rr8jd3.png/80px-%E3%83%9B%E3%82%BF%E3%83%AB%E3%82%A4%E3%82%AB.png" class="avatar-img" alt="萤火鱿" loading="lazy"></td>
+          <td class="name-col">萤火鱿</td>
+          <td>特小</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 3、4、5、6</div>
+            <div class="text-small" style="color: #ef6c00;">南: 9、10、11、12</div>
+          </td>
+          <td><div class="text-small">21、22、23、24、1、2、3、4</div></td>
+          <td>1400</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/a/a8/mo2h1tqi1bmlmzxx8jrpy8y80r1hx8q.png/80px-%E3%82%AC%E3%82%B6%E3%83%9F.png" class="avatar-img" alt="梭子蟹" loading="lazy"></td>
+          <td class="name-col">梭子蟹</td>
+          <td>中</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 6、7、8、9、10、11</div>
+            <div class="text-small" style="color: #ef6c00;">南: 1、2、3、4、5、12</div>
+          </td>
+          <td><div class="text-small">1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16、17、18、19、20、21、22、23、24、（全天）</div></td>
+          <td>2200</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/7/71/siccbxn1ekaqtspc5v8xjye4r896axr.png/80px-%E3%83%80%E3%83%B3%E3%82%B8%E3%83%8D%E3%82%B9%E3%82%AF%E3%83%A9%E3%83%96.png" class="avatar-img" alt="珍宝蟹" loading="lazy"></td>
+          <td class="name-col">珍宝蟹</td>
+          <td>中</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 1、2、3、4、5、11、12</div>
+            <div class="text-small" style="color: #ef6c00;">南: 5、6、7、8、9、10、11</div>
+          </td>
+          <td><div class="text-small">（全天）、1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16、17、18、19、20、21、22、23、24</div></td>
+          <td>1900</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/c/c8/m10b9hki4byqxo1gc746e9vaum4uxfn.png/80px-%E3%82%BA%E3%83%AF%E3%82%A4%E3%82%AC%E3%83%8B.png" class="avatar-img" alt="松叶蟹" loading="lazy"></td>
+          <td class="name-col">松叶蟹</td>
+          <td>稍大</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 1、2、3、4、11、12</div>
+            <div class="text-small" style="color: #ef6c00;">南: 5、6、7、8、9、10</div>
+          </td>
+          <td><div class="text-small">（全天）、1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16、17、18、19、20、21、22、23、24</div></td>
+          <td>6000</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/e/e3/o22ed5d1m1p3t99ftcs3tmiy3nd5yir.png/80px-%E3%82%BF%E3%83%A9%E3%83%90%E3%82%AC%E3%83%8B.png" class="avatar-img" alt="帝王蟹" loading="lazy"></td>
+          <td class="name-col">帝王蟹</td>
+          <td>稍大</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 1、2、3、11、12</div>
+            <div class="text-small" style="color: #ef6c00;">南: 5、6、7、8、9</div>
+          </td>
+          <td><div class="text-small">（全天）、1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16、17、18、19、20、21、22、23、24</div></td>
+          <td>8000</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/c/c0/sd2uynktzn3y6uc2fs9ulc0cmwefydl.png/80px-%E3%83%95%E3%82%B8%E3%83%84%E3%83%9C.png" class="avatar-img" alt="藤壶" loading="lazy"></td>
+          <td class="name-col">藤壶</td>
+          <td>特小</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 1、2、3、4、5、6、7、8、9、10、11、12、(全年)</div>
+            <div class="text-small" style="color: #ef6c00;">南: 1、2、3、4、5、6、7、8、9、10、11、12、(全年)</div>
+          </td>
+          <td><div class="text-small">1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16、17、18、19、20、21、22、23、24、（全天）</div></td>
+          <td>600</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/2/25/gfc6nmuip6nlxafgwppybljupk9rkcp.png/80px-%E3%82%BF%E3%82%AB%E3%82%A2%E3%82%B7%E3%82%AC%E3%83%8B.png" class="avatar-img" alt="高脚蟹" loading="lazy"></td>
+          <td class="name-col">高脚蟹</td>
+          <td>大</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 3、4</div>
+            <div class="text-small" style="color: #ef6c00;">南: 9、10</div>
+          </td>
+          <td><div class="text-small">（全天）、1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16、17、18、19、20、21、22、23、24</div></td>
+          <td>12000</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/b/b1/00lksnnop6o0627hh3d5nulbq5ia3tx.png/80px-%E3%82%AF%E3%83%AB%E3%83%9E%E3%82%A8%E3%83%93.png" class="avatar-img" alt="日本对虾" loading="lazy"></td>
+          <td class="name-col">日本对虾</td>
+          <td>稍小</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 6、7、8、9</div>
+            <div class="text-small" style="color: #ef6c00;">南: 1、2、3、12</div>
+          </td>
+          <td><div class="text-small">1、2、3、4、5、6、7、8、9、16、17、18、19、20、21、22、23、24</div></td>
+          <td>3000</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/3/3c/3crexe0yenawnuwhx5efb8fa55hn257.png/80px-%E3%82%A2%E3%83%9E%E3%82%A8%E3%83%93.png" class="avatar-img" alt="甜虾" loading="lazy"></td>
+          <td class="name-col">甜虾</td>
+          <td>稍小</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 1、2、9、10、11、12</div>
+            <div class="text-small" style="color: #ef6c00;">南: 3、4、5、6、7、8</div>
+          </td>
+          <td><div class="text-small">16、17、18、19、20、21、22、23、24、1、2、3、4、5、6、7、8、9</div></td>
+          <td>1400</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/8/8e/dg3b72zsmrf2tq8720ipu1r7fcth4mm.png/80px-%E3%82%B7%E3%83%A3%E3%82%B3.png" class="avatar-img" alt="虾蛄" loading="lazy"></td>
+          <td class="name-col">虾蛄</td>
+          <td>稍小</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 1、2、3、4、5、6、7、8、9、10、11、12、(全年)</div>
+            <div class="text-small" style="color: #ef6c00;">南: 1、2、3、4、5、6、7、8、9、10、11、12、(全年)</div>
+          </td>
+          <td><div class="text-small">1、2、3、4、5、6、7、8、9、16、17、18、19、20、21、22、23、24</div></td>
+          <td>2500</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/c/c9/ra4dvqadt6z940v5kupm8fs2bzz23m1.png/80px-%E3%82%A4%E3%82%BB%E3%82%A8%E3%83%93.png" class="avatar-img" alt="伊势龙虾" loading="lazy"></td>
+          <td class="name-col">伊势龙虾</td>
+          <td>稍大</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 10、11、12</div>
+            <div class="text-small" style="color: #ef6c00;">南: 4、5、6</div>
+          </td>
+          <td><div class="text-small">21、22、23、24、1、2、3、4</div></td>
+          <td>5000</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/d/df/qgzir3gz3e61wps5po7h0a5r8xou513.png/80px-%E3%83%AD%E3%83%96%E3%82%B9%E3%82%BF%E3%83%BC.png" class="avatar-img" alt="龙虾" loading="lazy"></td>
+          <td class="name-col">龙虾</td>
+          <td>稍大</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 1、4、5、6、12</div>
+            <div class="text-small" style="color: #ef6c00;">南: 6、7、10、11、12</div>
+          </td>
+          <td><div class="text-small">（全天）、1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16、17、18、19、20、21、22、23、24</div></td>
+          <td>4500</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/0/09/bvf7sfrluhd89wxtgp2lhjnku5c13n8.png/80px-%E3%83%80%E3%82%A4%E3%82%AA%E3%82%A6%E3%82%B0%E3%82%BD%E3%82%AF%E3%83%A0%E3%82%B7.png" class="avatar-img" alt="大王具足虫" loading="lazy"></td>
+          <td class="name-col">大王具足虫</td>
+          <td>中</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 7、8、9、10</div>
+            <div class="text-small" style="color: #ef6c00;">南: 1、2、3、4</div>
+          </td>
+          <td><div class="text-small">1、2、3、4、9、10、11、12、13、14、15、16、21、22、23、24</div></td>
+          <td>12000</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/e/ea/6ku052q2a5nb7dz84p3ix7l9k2cjz80.png/80px-%E3%82%AB%E3%83%96%E3%83%88%E3%82%AC%E3%83%8B.png" class="avatar-img" alt="鲎" loading="lazy"></td>
+          <td class="name-col">鲎</td>
+          <td>中</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 7、8、9</div>
+            <div class="text-small" style="color: #ef6c00;">南: 1、2、3</div>
+          </td>
+          <td><div class="text-small">1、2、3、4、21、22、23、24</div></td>
+          <td>2500</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/6/69/dr1t4cyp3f766xgtx0cbpul7vf39jio.png/80px-%E3%83%9B%E3%83%A4.png" class="avatar-img" alt="海鞘" loading="lazy"></td>
+          <td class="name-col">海鞘</td>
+          <td>稍小</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 4、5、6、7、8</div>
+            <div class="text-small" style="color: #ef6c00;">南: 1、2、10、11、12</div>
+          </td>
+          <td><div class="text-small">1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16、17、18、19、20、21、22、23、24、（全天）</div></td>
+          <td>1500</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/d/d6/j446n0i8nj5dthz8b7qi3u5dgsf8ruk.png/80px-%E3%83%81%E3%83%B3%E3%82%A2%E3%83%8A%E3%82%B4.png" class="avatar-img" alt="花园鳗" loading="lazy"></td>
+          <td class="name-col">花园鳗</td>
+          <td>稍小</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 5、6、7、8、9、10</div>
+            <div class="text-small" style="color: #ef6c00;">南: 1、2、3、4、11、12</div>
+          </td>
+          <td><div class="text-small">4、5、6、7、8、9、10、11、12、13、14、15、16、17、18、19、20、21</div></td>
+          <td>1100</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/3/3a/2sehvkvft9salrj0srn7o56ezf01rc5.png/80px-%E3%83%92%E3%83%A9%E3%83%A0%E3%82%B7.png" class="avatar-img" alt="海扁虫" loading="lazy"></td>
+          <td class="name-col">海扁虫</td>
+          <td>特小</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 8、9</div>
+            <div class="text-small" style="color: #ef6c00;">南: 2、3</div>
+          </td>
+          <td><div class="text-small">16、17、18、19、20、21、22、23、24、1、2、3、4、5、6、7、8、9</div></td>
+          <td>700</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+        <tr>
+          <td class="avatar-col"><img src="https://patchwiki.biligame.com/images/dongsen/thumb/5/50/jcdvt5khosemkjb0slfvpag3csk8f99.png/80px-%E3%82%AB%E3%82%A4%E3%83%AD%E3%82%A6%E3%83%89%E3%82%A6%E3%82%B1%E3%83%84.png" class="avatar-img" alt="偕老同穴" loading="lazy"></td>
+          <td class="name-col">偕老同穴</td>
+          <td>中</td>
+          <td>
+            <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: 1、2、10、11、12</div>
+            <div class="text-small" style="color: #ef6c00;">南: 4、5、6、7、8</div>
+          </td>
+          <td><div class="text-small">（全天）、1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16、17、18、19、20、21、22、23、24</div></td>
+          <td>5000</td>
+          <td class="check-col"><div class="check-circle"></div></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="footer">
+      带着这本图鉴，穿上潜水服去海底寻宝吧！ —— 动物森友会专属收集册
+    </div>
+  </div>
+</body>
+</html>

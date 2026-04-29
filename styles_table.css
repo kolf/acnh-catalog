@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+:root {
+  --bg-color: #fdf6e3;
+  --text-main: #5d4037;
+  --leaf-green: #78c2ad;
+  --wood-brown: #8d6e63;
+  --card-bg: #ffffff;
+  --border-radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e0f7fa; /* Screen background */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  font-family: 'ZCOOL KuaiLe', cursive, sans-serif;
+  color: var(--text-main);
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+  padding: 20px;
+}
+
+/* A4 Page Setup */
+.a4-page {
+  width: 210mm;
+  /* Remove fixed height so it can extend over multiple pages when printed */
+  min-height: 297mm;
+  background-color: var(--bg-color);
+  background-image: radial-gradient(#dcedc8 20%, transparent 20%),
+    radial-gradient(#dcedc8 20%, transparent 20%);
+  background-position: 0 0, 10px 10px;
+  background-size: 20px 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  padding: 15mm;
+  display: flex;
+  flex-direction: column;
+}
+
+@media print {
+  body {
+    background: none;
+    padding: 0;
+  }
+  .a4-page {
+    margin: 0;
+    box-shadow: none;
+    width: 100%;
+    min-height: 100%;
+    /* Page break settings */
+    page-break-after: always;
+  }
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+  background: white;
+  border: 4px dashed var(--leaf-green);
+  border-radius: var(--border-radius);
+  padding: 15px;
+  box-shadow: 4px 4px 0 rgba(120, 194, 173, 0.3);
+  page-break-inside: avoid;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+  color: var(--leaf-green);
+  text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.island-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  font-size: 16px;
+  color: var(--wood-brown);
+}
+
+.island-info span {
+  border-bottom: 2px solid var(--wood-brown);
+  padding: 0 20px;
+  min-width: 120px;
+  display: inline-block;
+}
+
+/* Main Grid for Villagers */
+.table-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+/* Individual Villager Item */
+.villager-item {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 6px 8px;
+  border-radius: var(--border-radius);
+  border: 2px solid var(--wood-brown);
+  page-break-inside: avoid; /* Prevent cutting item across pages */
+  box-shadow: 2px 2px 0 rgba(141, 110, 99, 0.2);
+}
+
+.check-circle {
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--text-main);
+  border-radius: 50%;
+  background: white;
+  flex-shrink: 0;
+  margin-right: 8px;
+}
+
+.villager-name {
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Footer elements */
+.footer {
+  margin-top: auto;
+  text-align: center;
+  font-size: 14px;
+  color: var(--wood-brown);
+  padding-top: 5mm;
+  page-break-inside: avoid;
+}
