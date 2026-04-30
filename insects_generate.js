@@ -92,11 +92,9 @@ function generate() {
         <tr>
           <th class="avatar-col">图片</th>
           <th>昆虫名称</th>
-          <th>出现场所</th>
-          <th>天气要求</th>
+          <th>场所/天气/价格</th>
           <th>出现月份(北)</th>
           <th>出现时间</th>
-          <th>价格</th>
           <th class="check-col">收集</th>
         </tr>
       </thead>
@@ -108,11 +106,15 @@ function generate() {
         <tr>
           <td class="avatar-col">${avatarHtml}</td>
           <td class="name-col">${ins.name}</td>
-          <td>${ins.location}</td>
-          <td>${ins.weather || '无'}</td>
+          <td>
+            <div style="font-size: 11px; color: #5d4037;">
+              场所: <b>${ins.location}</b><br>
+              天气: ${ins.weather || '无'}<br>
+              价格: <span style="color: #d32f2f; font-weight: bold;">${ins.price}</span>
+            </div>
+          </td>
           <td class="text-small">${ins.monthsNorth}</td>
           <td class="text-small">${ins.time}</td>
-          <td>${ins.price}</td>
           <td class="check-col"><div class="check-circle"></div></td>
         </tr>`;
   }
