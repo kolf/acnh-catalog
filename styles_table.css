@@ -47,7 +47,7 @@ body {
     box-shadow: none;
     width: 100%;
     min-height: 100%;
-    /* Page break settings */
+    padding: 10mm;
     page-break-after: always;
   }
 }

@@ -35,7 +35,6 @@ body {
 .a4-page {
   width: 210mm;
   min-height: 297mm;
-  background: white;
   display: flex;
   flex-direction: column;
 }
@@ -50,6 +49,7 @@ body {
     box-shadow: none;
     width: 100%;
     height: auto;
+    padding: 10mm;
     page-break-after: always;
   }
 }

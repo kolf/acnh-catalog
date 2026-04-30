@@ -39,7 +39,6 @@ h1, .island-info, .footer, th, .name-col {
 .a4-page {
   width: 210mm;
   min-height: 297mm;
-  background: white;
   display: flex;
   flex-direction: column;
 }
@@ -54,6 +53,7 @@ h1, .island-info, .footer, th, .name-col {
     box-shadow: none;
     width: 100%;
     min-height: 100%;
+    padding: 10mm;
   }
   /* Repeat table header on every printed page */
   thead {
