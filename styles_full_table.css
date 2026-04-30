@@ -72,7 +72,6 @@ h1, .island-info, .footer, th, .name-col {
   border: 4px dashed var(--leaf-green);
   border-radius: var(--border-radius);
   padding: 5px 15px;
-  box-shadow: 4px 4px 0 rgba(120, 194, 173, 0.3);
   page-break-inside: avoid;
 }
 
@@ -109,7 +108,6 @@ h1, .island-info, .footer, th, .name-col {
   background: white;
   border-radius: var(--border-radius);
   overflow: hidden;
-  box-shadow: 2px 2px 0 rgba(141, 110, 99, 0.2);
   border: 2px solid var(--wood-brown);
   margin-bottom: 20px;
   font-size: 12px;

@@ -77,7 +77,6 @@ function generate() {
       padding: 10px 5px;
       background: #ffffff;
       position: relative;
-      box-shadow: 2px 2px 0 rgba(85, 139, 47, 0.2);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -112,7 +111,6 @@ function generate() {
     }
     .header {
       border-color: #558b2f;
-      box-shadow: 4px 4px 0 rgba(85, 139, 47, 0.3);
       margin-bottom: 10px;
     }
     .header h1 {

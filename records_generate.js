@@ -83,7 +83,6 @@ function generate() {
     }
     .header {
       border-color: #ad1457;
-      box-shadow: 4px 4px 0 rgba(173, 20, 87, 0.3);
     }
     .header h1 {
       color: #ad1457;

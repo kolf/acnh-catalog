@@ -60,7 +60,6 @@ body {
   border: 4px dashed var(--leaf-green);
   border-radius: var(--border-radius);
   padding: 5px 15px;
-  box-shadow: 4px 4px 0 rgba(120, 194, 173, 0.3);
   page-break-inside: avoid;
 }
 
@@ -107,7 +106,6 @@ body {
   border-radius: var(--border-radius);
   border: 2px solid var(--wood-brown);
   page-break-inside: avoid; /* Prevent cutting item across pages */
-  box-shadow: 2px 2px 0 rgba(141, 110, 99, 0.2);
 }
 
 .check-circle {

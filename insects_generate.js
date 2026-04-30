@@ -80,7 +80,7 @@ function generate() {
 </head>
 <body>
   <div class="a4-page">
-    <div class="header" style="border-color: #388e3c; box-shadow: 4px 4px 0 rgba(56, 142, 60, 0.3);">
+    <div class="header" style="border-color: #388e3c;">
       <h1 style="color: #388e3c;"><span>🦋</span> 动森博物馆图鉴 - 昆虫 <span>🦋</span></h1>
       
     </div>
