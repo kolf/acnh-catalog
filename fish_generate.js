@@ -88,11 +88,9 @@ function generate() {
         <tr>
           <th class="avatar-col">图片</th>
           <th>鱼类名称</th>
-          <th>出现场所</th>
-          <th>鱼影尺寸</th>
+          <th>场所/尺寸/价格</th>
           <th>出现月份(北)</th>
           <th>出现时间</th>
-          <th>价格</th>
           <th class="check-col">收集</th>
         </tr>
       </thead>
@@ -104,11 +102,15 @@ function generate() {
         <tr>
           <td class="avatar-col">${avatarHtml}</td>
           <td class="name-col">${f.name}</td>
-          <td>${f.location}</td>
-          <td>${f.shadowSize}</td>
+          <td>
+            <div style="font-size: 11px; color: #1565c0;">
+              场所: <b>${f.location}</b><br>
+              尺寸: ${f.shadowSize}<br>
+              价格: <span style="color: #d32f2f; font-weight: bold;">${f.price}</span>
+            </div>
+          </td>
           <td class="text-small">${f.monthsNorth}</td>
           <td class="text-small">${f.time}</td>
-          <td>${f.price}</td>
           <td class="check-col"><div class="check-circle"></div></td>
         </tr>`;
   }

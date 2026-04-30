@@ -65,13 +65,13 @@ body {
 /* Header */
 .header {
   text-align: center;
-  position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   background: white;
   border: 4px dashed var(--leaf-green);
   border-radius: var(--border-radius);
-  padding: 15px;
+  padding: 5px 15px;
   box-shadow: 4px 4px 0 rgba(120, 194, 173, 0.3);
+  page-break-inside: avoid;
 }
 
 .header h1 {

@@ -101,10 +101,8 @@ function generate() {
         <tr>
           <th class="avatar-col">封面</th>
           <th>唱片名称</th>
-          <th>英文名</th>
-          <th>日文名</th>
-          <th>来源</th>
-          <th>买入/卖出</th>
+          <th>外语名</th>
+          <th>获取渠道(来源/价格)</th>
           <th class="check-col">收集</th>
         </tr>
       </thead>
@@ -116,12 +114,17 @@ function generate() {
         <tr>
           <td class="avatar-col">${avatarHtml}</td>
           <td class="name-col">${rec.name}</td>
-          <td><div class="text-small">${rec.english}</div></td>
-          <td><div class="text-small">${rec.japanese}</div></td>
-          <td><div class="text-small">${rec.source}</div></td>
           <td>
-            <div class="text-small" style="color: #d32f2f;">买: ${rec.buyPrice}</div>
-            <div class="text-small" style="color: #388e3c;">卖: ${rec.sellPrice}</div>
+            <div class="text-small" style="color: #555;">
+              英: ${rec.english}<br>
+              日: ${rec.japanese}
+            </div>
+          </td>
+          <td>
+            <div class="text-small" style="color: #555;">
+              来源: ${rec.source}<br>
+              <span style="color: #d32f2f;">买: ${rec.buyPrice}</span> | <span style="color: #388e3c;">卖: ${rec.sellPrice}</span>
+            </div>
           </td>
           <td class="check-col"><div class="check-circle"></div></td>
         </tr>`;

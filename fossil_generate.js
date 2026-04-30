@@ -96,8 +96,7 @@ function generate() {
         <tr>
           <th class="avatar-col">图片</th>
           <th>化石名称</th>
-          <th>英文名</th>
-          <th>日文名</th>
+          <th>外语名(英/日)</th>
           <th>价格</th>
           <th style="width: 40%">傅达的介绍</th>
           <th class="check-col">收集</th>
@@ -111,8 +110,12 @@ function generate() {
         <tr>
           <td class="avatar-col">${avatarHtml}</td>
           <td class="name-col">${fos.name}</td>
-          <td><div style="font-size:10px; color:#555;">${fos.english}</div></td>
-          <td><div style="font-size:10px; color:#555;">${fos.japanese}</div></td>
+          <td>
+            <div style="font-size:10px; color:#555;">
+              英: ${fos.english}<br>
+              日: ${fos.japanese}
+            </div>
+          </td>
           <td>${fos.price}</td>
           <td><div class="text-small">${fos.description}</div></td>
           <td class="check-col"><div class="check-circle"></div></td>

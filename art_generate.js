@@ -105,9 +105,7 @@ function generate() {
         <tr>
           <th class="avatar-col">图片</th>
           <th>艺术品名称</th>
-          <th>真伪</th>
-          <th>尺寸</th>
-          <th>类型</th>
+          <th>属性(真伪/尺寸/类型)</th>
           <th>价格</th>
           <th class="check-col">收集</th>
         </tr>
@@ -122,9 +120,13 @@ function generate() {
         <tr>
           <td class="avatar-col">${avatarHtml}</td>
           <td class="name-col">${art.name}</td>
-          <td>${authDisplay}</td>
-          <td>${art.size}</td>
-          <td>${art.type}</td>
+          <td>
+            <div style="font-size: 11px; color: #4a148c; line-height: 1.4;">
+              真伪: ${authDisplay}<br>
+              尺寸: ${art.size}<br>
+              类型: ${art.type}
+            </div>
+          </td>
           <td>${art.price}</td>
           <td class="check-col"><div class="check-circle"></div></td>
         </tr>`;

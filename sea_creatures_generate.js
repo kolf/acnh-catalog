@@ -98,10 +98,9 @@ function generate() {
         <tr>
           <th class="avatar-col">图片</th>
           <th>名称</th>
-          <th>影子大小</th>
+          <th>尺寸与价格</th>
           <th style="width: 20%;">出现月份 (北/南半球)</th>
           <th style="width: 20%;">出现时间</th>
-          <th>价格</th>
           <th class="check-col">收集</th>
         </tr>
       </thead>
@@ -118,13 +117,17 @@ function generate() {
         <tr>
           <td class="avatar-col">${avatarHtml}</td>
           <td class="name-col">${cr.name}</td>
-          <td>${cr.shadowSize}</td>
+          <td>
+            <div style="font-size: 11px; color: #006064;">
+              尺寸: ${cr.shadowSize}<br>
+              价格: <span style="color: #d32f2f; font-weight: bold;">${cr.price}</span>
+            </div>
+          </td>
           <td>
             <div class="text-small" style="color: #0277bd; margin-bottom: 2px;">北: ${north}</div>
             <div class="text-small" style="color: #ef6c00;">南: ${south}</div>
           </td>
           <td><div class="text-small">${cr.time}</div></td>
-          <td>${cr.price}</td>
           <td class="check-col"><div class="check-circle"></div></td>
         </tr>`;
   }

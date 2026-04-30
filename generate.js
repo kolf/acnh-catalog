@@ -88,11 +88,8 @@ function generate() {
         <tr>
           <th class="avatar-col">头像</th>
           <th>名字</th>
-          <th>性别</th>
-          <th>性格</th>
-          <th>种族</th>
-          <th>生日</th>
-          <th>口头禅</th>
+          <th>基本信息</th>
+          <th>附加信息</th>
           <th class="check-col">收集</th>
         </tr>
       </thead>
@@ -109,11 +106,17 @@ function generate() {
         <tr>
           <td class="avatar-col">${avatarHtml}</td>
           <td class="name-col">${v.name}</td>
-          <td>${genderIcon}</td>
-          <td>${v.personality}</td>
-          <td>${v.species}</td>
-          <td>${v.birthday}</td>
-          <td>${v.catchphrase}</td>
+          <td>
+            <div style="font-size: 12px; line-height: 1.4;">
+              ${genderIcon} | ${v.personality} | ${v.species}
+            </div>
+          </td>
+          <td>
+            <div style="font-size: 12px; color: #666; line-height: 1.4;">
+              生日: ${v.birthday}<br>
+              口头禅: "${v.catchphrase}"
+            </div>
+          </td>
           <td class="check-col"><div class="check-circle"></div></td>
         </tr>`;
   }

@@ -83,10 +83,8 @@ function generate() {
         <tr>
           <th class="avatar-col">图片</th>
           <th>素材名称</th>
-          <th>日文名</th>
-          <th>英文名</th>
-          <th>最大堆叠</th>
-          <th>售出价格</th>
+          <th>外语名</th>
+          <th>属性与价格</th>
           <th class="check-col">收集</th>
         </tr>
       </thead>
@@ -98,10 +96,18 @@ function generate() {
         <tr>
           <td class="avatar-col">${avatarHtml}</td>
           <td class="name-col">${m.name}</td>
-          <td>${m.nameJa}</td>
-          <td>${m.nameEn}</td>
-          <td>${m.stackSize}</td>
-          <td>${m.price} 铃钱</td>
+          <td>
+            <div style="font-size: 11px; color: #555;">
+              英: ${m.nameEn}<br>
+              日: ${m.nameJa}
+            </div>
+          </td>
+          <td>
+            <div style="font-size: 11px; color: #555;">
+              堆叠: ${m.stackSize}<br>
+              价格: <span style="color: #d32f2f; font-weight: bold;">${m.price} 铃钱</span>
+            </div>
+          </td>
           <td class="check-col"><div class="check-circle"></div></td>
         </tr>`;
   }
