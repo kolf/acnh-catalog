@@ -31,7 +31,7 @@ body {
   padding: 20px;
 }
 
-h1, .island-info, .footer, th {
+h1, .island-info, .footer, th, .name-col {
   font-family: 'ZCOOL KuaiLe', cursive, sans-serif;
 }
 
