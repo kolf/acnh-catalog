@@ -106,10 +106,7 @@ function generate() {
   <div class="a4-page">
     <div class="header">
       <h1><span>🛋️</span> 动森家具图鉴 <span>🪑</span></h1>
-      <div class="island-info">
-        <div>小岛名称：<span></span></div>
-        <div>岛主名字：<span></span></div>
-      </div>
+      
     </div>
     
     <table class="villager-table">
