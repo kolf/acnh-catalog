@@ -102,7 +102,6 @@ function generate() {
     <table class="villager-table">
       <thead>
         <tr>
-          <th>序号</th>
           <th class="avatar-col">封面</th>
           <th>唱片名称</th>
           <th>英文名</th>
@@ -118,7 +117,6 @@ function generate() {
     const avatarHtml = rec.imageUrl ? `<img src="${rec.imageUrl}" class="avatar-img" alt="${rec.name}" loading="lazy">` : '💿';
     html += `
         <tr>
-          <td>${rec.num}</td>
           <td class="avatar-col">${avatarHtml}</td>
           <td class="name-col">${rec.name}</td>
           <td><div class="text-small">${rec.english}</div></td>
