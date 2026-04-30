@@ -119,7 +119,8 @@ body {
 }
 
 .villager-name {
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: normal;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

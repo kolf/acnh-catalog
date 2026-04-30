@@ -135,9 +135,9 @@ h1, .island-info, .footer, th, .name-col {
 }
 
 .name-col {
-  font-weight: bold;
+  font-weight: normal;
   color: var(--leaf-green);
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .gender-m {
