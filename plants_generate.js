@@ -44,7 +44,8 @@ function generate() {
       }
     }
       
-    if (name && name !== '+' && !seen.has(name)) {
+    const excludeList = ['小麦', '番茄', '土豆', '胡萝卜', '甘蔗', '南瓜'];
+    if (name && name !== '+' && !seen.has(name) && !excludeList.includes(name)) {
       seen.add(name);
       plants.push({ name, price, imageUrl });
     }
